@@ -1,0 +1,31 @@
+package com.abc.match.entity;
+
+@Entity
+public class MatchEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="match_id")
+	private int matchId;
+	
+	@Column(name="team1")
+	private int extras;
+	
+	@Column(name="total_score")
+	private int totalScore;
+	
+	@Column(name="total_wicket")
+	private int totalWicket;
+	
+	@Column(name="total_over")
+	private double totalOver;
+	
+	@Column(name="team_name")
+	private String teamName;
+	
+	@Column(name="inning_status")
+	private String inningStatus;
+	
+	@Column(name="team_id")
+	private int teamId;
+
+}

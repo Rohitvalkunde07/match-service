@@ -1,0 +1,5 @@
+package com.abc.match.repository;
+
+public interface MatchRepository {
+
+}

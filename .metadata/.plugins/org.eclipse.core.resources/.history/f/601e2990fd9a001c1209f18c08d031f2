@@ -1,0 +1,5 @@
+package com.abc.match.exception;
+
+public class MatchNotFoundException {
+
+}

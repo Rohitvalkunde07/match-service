@@ -1,0 +1,5 @@
+package com.abc.match.model;
+
+public class Match {
+
+}

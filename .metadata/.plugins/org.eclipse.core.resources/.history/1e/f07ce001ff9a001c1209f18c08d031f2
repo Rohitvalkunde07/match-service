@@ -1,0 +1,19 @@
+package com.abc.match.service;
+
+import java.util.List;
+import com.abc.match.model.Match;
+
+
+public interface MatchService {
+	
+public Match saveInning(Match match);
+	
+	public List<Match> getAllmatch();
+	
+	public Match getMatchById(int matchId);
+	
+	public void deleteMatch(int matchId);
+	
+	public Match updateMatch(Match match);
+
+}
