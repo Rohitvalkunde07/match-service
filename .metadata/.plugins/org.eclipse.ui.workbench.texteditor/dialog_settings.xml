@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="match"/>
 		<list key="findhistory">
+			<item value="setScheduleId"/>
 			<item value="inning"/>
 			<item value="Inning"/>
 			<item value="matchEntity"/>

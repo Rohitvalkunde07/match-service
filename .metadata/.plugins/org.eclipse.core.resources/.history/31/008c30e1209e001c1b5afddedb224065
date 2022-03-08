@@ -1,0 +1,39 @@
+package com.abc.match.entity;
+
+import java.time.LocalTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Entity
+@Table(name="match_tbl")
+public class MatchEntity {
+	@Id
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="match_id")
+	private int matchId;
+	
+	@Column(name="schedule_id")
+	private int scheduleId;
+
+	@Column(name="started_at")
+	
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm") 
+	private LocalTime startedAt;
+	
+	@Column(name="match_status")
+	private String matchStatus;
+	
+	@Column(name="match_result")
+	private String matchResult;
+
+
+	
+	
+}

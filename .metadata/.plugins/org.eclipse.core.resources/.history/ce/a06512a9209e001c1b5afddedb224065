@@ -1,0 +1,17 @@
+package com.abc.match.model;
+
+import java.time.LocalTime;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public class Match {
+	private int matchId;
+	private int scheduleId;
+	
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss") 
+	private LocalTime startedAt;
+	private String matchStatus;
+	private String matchResult;
+	
+
+}

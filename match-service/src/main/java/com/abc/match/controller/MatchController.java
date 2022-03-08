@@ -21,6 +21,7 @@ import com.abc.match.service.MatchService;
 @RestController
 @RequestMapping("/match")
 public class MatchController {
+	
 	@Autowired
 	private MatchService matchService;
 	
@@ -51,7 +52,7 @@ public class MatchController {
 	}
 	
 	@PutMapping("/update}")
-	public Match updateMatch(Match match)
+	public Match updateMatch(@RequestBody Match match)
 	{
 		return matchService.updateMatch(match);
 	}
